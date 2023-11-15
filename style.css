@@ -1,3 +1,5 @@
+
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +7,12 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:ital,wght@1,200&display=swap');
-
+/* Utilities */
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: white;
+    background-color:antiquewhite;
 }
-
-
+/* Header + navbar */
 .wrapper {
     height: 80px;
     margin: 0 auto;
@@ -19,8 +20,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 navbar {
     height: 70px;
@@ -44,5 +43,45 @@ navbar {
     font-weight: bolder;
 }
 
+/* Jumbo with cta */
+
+.jumbo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.jumbo .cta h1{
+    font-size: 70px;
+}
+
+.jumbo .cta .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-1, .btn-2{
+    margin: 0 30px;
+    padding:10px 20px;
+    border-radius: 25px;
+    background-color: black;
+    color:white;
+    
+}
+
+.btn-1 a, .btn-2 a{
+    text-decoration: none;
+    color:white;
+}
 
 
+.btn-2 a:hover, .btn-1 a:hover{
+    color: antiquewhite;
+    font-weight: bolder;
+}
