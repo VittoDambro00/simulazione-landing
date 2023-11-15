@@ -1,4 +1,3 @@
-
 /* Reset */
 * {
     margin: 0;
@@ -7,12 +6,14 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:ital,wght@1,200&display=swap');
+
 /* Utilities */
 body {
     font-family: 'Raleway', sans-serif;
-    background-color:antiquewhite;
+    background-color: antiquewhite;
 }
-/* Header + navbar */
+
+/* Header + navbar MILESTONE 1 */
 .wrapper {
     height: 80px;
     margin: 0 auto;
@@ -43,7 +44,7 @@ navbar {
     font-weight: bolder;
 }
 
-/* Jumbo with cta */
+/* Jumbo with cta MILESTONE 2*/
 
 .jumbo {
     display: flex;
@@ -54,34 +55,64 @@ navbar {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    margin-bottom: 5%;
 }
 
-.jumbo .cta h1{
+.jumbo .cta h1 {
     font-size: 70px;
 }
 
-.jumbo .cta .btns{
+.jumbo .cta .btns {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.btn-1, .btn-2{
+.btn-1,
+.btn-2 {
     margin: 0 30px;
-    padding:10px 20px;
+    padding: 10px 20px;
     border-radius: 25px;
     background-color: black;
-    color:white;
-    
+    color: white;
+
 }
 
-.btn-1 a, .btn-2 a{
+.btn-1 a,
+.btn-2 a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 
-.btn-2 a:hover, .btn-1 a:hover{
+.btn-2 a:hover,
+.btn-1 a:hover {
     color: antiquewhite;
     font-weight: bolder;
+}
+
+/* Sections 1,2 MILESTONE 3*/
+
+#section-1,
+#section-2 {
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+    border: 4px solid black;
+    background-color: aliceblue;
+    padding: 0 auto;
+    margin: 20px auto;
+    width: 100%;
+}
+
+#section-1 img,
+#section-2 img {
+    height: 40%;
+    width: 40%;
+    margin: 0 10px;
+}
+
+
+#section-2{
+    flex-direction:row-reverse;
 }
