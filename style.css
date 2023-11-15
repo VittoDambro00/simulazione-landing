@@ -123,6 +123,7 @@ navbar .wrapper #hamburger {
 #section-2 .textsecond {
     margin: 10px auto;
     font-size: 20px;
+    text-align: center;
 }
 
 #section-2 {
@@ -203,7 +204,7 @@ footer .copyright a {
     color: white;
 }
 
-/* Media queries MILESTONE 6 */
+/* Media queries homepage MILESTONE 6 */
 
 @media only screen and (max-width:575px) {
     navbar .wrapper #hamburger {
@@ -247,4 +248,9 @@ footer .copyright a {
     height: 600px;
     width: 400px;
 }
-
+/* Media queries about page MILESTONE 8 */
+@media only screen and (max-width:575px){
+    .desc{
+        flex-direction: column;
+    }
+}
