@@ -17,6 +17,7 @@ body {
 .wrapper {
     height: 80px;
     margin: 0 auto;
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +25,13 @@ body {
 
 navbar {
     height: 70px;
+}
+
+navbar .wrapper #hamburger{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none; 
 }
 
 .menu ul {
@@ -60,6 +68,8 @@ navbar {
 
 .jumbo .cta h1 {
     font-size: 70px;
+    width: 100%;
+    background-color: white;
 }
 
 .jumbo .cta .btns {
@@ -115,6 +125,7 @@ navbar {
 #section-1 .textfirst,
 #section-2 .textsecond {
     margin: 10px auto;
+    font-size: 20px;
 }
 
 #section-2 {
@@ -160,12 +171,12 @@ footer{
     flex-direction: row;
 }
 
-.pagine ul{
+.pages ul{
     list-style: none;
     text-align: center;
 }
 
-.pagine ul li a{
+.pages ul li a{
     text-decoration: none;
     color:black;
     margin: 10px auto;
@@ -181,9 +192,45 @@ footer{
     color:black;
     margin: 10px auto;
 }
-footer .copyright{
+footer .copyright {
     text-align: center;
     background-color: black;
     color: white;
     padding: 10px 20px;
+}
+
+footer .copyright a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Media queries MILESTONE 6 */
+
+@media only screen and (max-width:575px){
+    navbar .wrapper #hamburger{
+        display:block;
+    }
+
+    navbar .wrapper .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    #section-1, #section-2{
+        flex-direction: column;
+    }
+
+    #section-1 .textfirst,
+    #section-2 .textsecond {
+    font-size: 15px;
+    }
+
+    .jumbo .cta h1{
+        font-size: 30px;
+    }
+
+    footer .content {
+        padding: 0 10px;
+    }
 }
