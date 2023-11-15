@@ -144,3 +144,46 @@ navbar {
     font-weight: bold;
 }
 
+
+/* Footer MILESTONE 5 */
+
+footer{
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.pagine ul{
+    list-style: none;
+    text-align: center;
+}
+
+.pagine ul li a{
+    text-decoration: none;
+    color:black;
+    margin: 10px auto;
+}
+
+.links ul{
+    list-style: none;
+    text-align: center;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color:black;
+    margin: 10px auto;
+}
+footer .copyright{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
